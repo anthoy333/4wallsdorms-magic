@@ -3,15 +3,23 @@ import type { FakeCollege, FakeDorm } from "./fakeData"
 type FakeCollegePageTemplateProps = {
   college: FakeCollege
   onSelectDorm: (dorm: FakeDorm) => void
+  onBackToCollegeList: () => void
 }
 
 export function FakeCollegePageTemplate({
   college,
   onSelectDorm,
+  onBackToCollegeList,
 }: FakeCollegePageTemplateProps) {
   return (
     <main className="min-h-screen bg-gray-50 p-6">
       <div className="mx-auto max-w-6xl space-y-6">
+	  <button
+		  onClick={onBackToCollegeList}
+		  className="rounded-lg border bg-white px-4 py-2 text-sm font-medium shadow-sm hover:bg-gray-100"
+		>
+		  ← Back to Fake College List
+		</button>
         <section className="rounded-2xl bg-white p-6 shadow-sm">
           <p className="text-sm text-gray-500">
             {college.city}, {college.state}

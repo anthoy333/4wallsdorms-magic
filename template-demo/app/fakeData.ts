@@ -34,7 +34,8 @@ export type FakeCollege = {
   dorms: FakeDorm[]
 }
 
-export const fakeCollege: FakeCollege = {
+export const fakeColleges: FakeCollege[] = [
+  {
   id: "suffolk",
   name: "Fake Suffolk University",
   city: "Boston",
@@ -113,4 +114,44 @@ export const fakeCollege: FakeCollege = {
       ],
     },
   ],
-}
+  },
+  {
+    id: "dean",
+    name: "Fake Dean College",
+    city: "Franklin",
+    state: "MA",
+    description:
+      "This is a second fake college proving the same templates can work for multiple schools.",
+    image: "/placeholder.svg",
+    dorms: [
+      {
+        id: "dean-main-hall",
+        name: "Fake Dean Main Hall",
+        address: "99 Fake Campus Road, Franklin, MA",
+        description:
+          "A fake Dean College dorm using the same dorm and room templates.",
+        image: "/placeholder.svg",
+        quickFacts: [
+          { label: "Room Types", value: "Singles and Doubles" },
+          { label: "Bathrooms", value: "Communal bathrooms" },
+          { label: "Best For", value: "First-year students" },
+        ],
+        rooms: [
+          {
+            id: "room-101",
+            roomNumber: "101",
+            title: "Room 101",
+            roomType: "Double Room",
+            beds: 2,
+            bathroomType: "Communal Bathroom",
+            annualCost: "$15,000",
+            description:
+              "A fake Dean room using the same RoomPageTemplate.",
+            image: "/placeholder.svg",
+            features: ["2 beds", "2 desks", "Closet", "Communal bathroom"],
+          },
+        ],
+      },
+    ],
+  },
+]
