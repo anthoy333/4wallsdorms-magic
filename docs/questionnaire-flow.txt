@@ -1,0 +1,74 @@
+Dorm-upload Questionnaire Flow (hierarchical)
+============================================
+
+1. School name
+2. Campus name
+3. Dorm / Building / Residence Hall name
+4. Floor
+5. Academic year lived there
+
+6. Occupants count
+    •  Primary room/suite occupant count (e.g., 404, Suite 404)
+    •  Sub room/suite occupant count (if applicable, e.g., 404B, Room 405)
+7. Room number/letter
+    •  Primary room/suite number (e.g., 404, Suite 404)
+    •  Sub room letter/number (if applicable, e.g., 404B, Room 405)
+
+8. How many private bathroom?
+    ├── 0  → continue at 9
+    └── >0
+        •  Upload private-bathroom photos
+        •  Upload private-bathroom videos
+
+9. Private common space / living room?
+    ├── No  → continue at 10
+    └── Yes
+        •  Upload private-common-space photos
+        •  Upload private-common-space videos
+
+10. Private kitchen?
+    ├── No  → proceed to step 11 (public facilities)
+    └── Yes
+        •  Upload private-kitchen photos
+        •  Upload private-kitchen videos
+
+11. Public bathroom?
+    ├── No  → step 12
+    └── Yes
+        •  Upload public-bathroom photos
+        •  Upload public-bathroom videos
+
+12. Public common space?
+    ├── No  → step 13
+    └── Yes
+        •  Upload public-common-space photos
+        •  Upload public-common-space videos
+
+13. Public kitchen?
+    ├── No  → step 14
+    └── Yes
+        •  Select public-kitchen count (one / more than one)
+        •  Specify floors for kitchens (repeatable)
+        •  Upload public-kitchen photos
+        •  Upload public-kitchen videos
+
+14. Public game room?
+    ├── No  → step 15
+    └── Yes
+        •  Select public-game-room count (one / more than one)
+        •  If more than one: exact count
+        •  Specify floors for game rooms (repeatable)
+        •  Upload public-game-room photos
+        •  Upload public-game-room videos
+
+15. Other dorm photos to upload?
+    ├── No  → step 16
+    └── Yes
+        •  Upload additional dorm-room photos
+        •  Upload additional dorm-room videos
+        •  (Optional) Plaque photo
+
+16. Amenities (free-text list)
+17. Comments (free text)
+18. Student email (verification)
+19. Submit 

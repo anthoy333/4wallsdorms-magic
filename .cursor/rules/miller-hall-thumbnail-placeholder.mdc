@@ -1,0 +1,29 @@
+---
+description: Placeholder thumbnail rule for Miller Hall rooms without their own photos
+globs: app/utils/millerHallMapping.ts
+alwaysApply: false
+---
+
+# Miller Hall Thumbnail Placeholder Rule
+
+When adding a room to `MILLER_ROOMS_WITH_MEDIA` in `millerHallMapping.ts` that does **not** have its own Backblaze photo yet, always use this URL as the `thumbnailUrl` placeholder:
+
+```
+https://f005.backblazeb2.com/file/4wallsdorms/Suffolk+University+Dorms/Miller/Floor+2/201+%2B+202/sumiller201-plaque-imp-6.jpg
+```
+
+## Example
+
+```typescript
+{
+  roomNumber: '207',
+  title: 'Double Suite',
+  thumbnailUrl: 'https://f005.backblazeb2.com/file/4wallsdorms/Suffolk+University+Dorms/Miller/Floor+2/201+%2B+202/sumiller201-plaque-imp-6.jpg',
+},
+```
+
+## When to apply
+
+- Any new room entry added to `MILLER_ROOMS_WITH_MEDIA` where the real room photo URL is unknown or not yet uploaded.
+- Never leave `thumbnailUrl` empty or use a non-Backblaze URL.
+- Replace the placeholder later once the real room photo is available in Backblaze.

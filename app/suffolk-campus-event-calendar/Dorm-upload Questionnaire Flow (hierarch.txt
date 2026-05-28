@@ -1,0 +1,78 @@
+Dorm-upload Questionnaire Flow (hierarchical)
+============================================
+
+1. Dorm / Building / Residence Hall name
+2. Room number
+3. Campus name
+4. Floor
+5. Academic year lived there
+6. Beds in the room
+
+7. What type of dorm room do you live in?
+    ├── Suite → continue at 7.1
+    ├── Apartment → continue at 7.1
+    ├── Adjoining rooms → continue at 7.1
+    └── Other → continue at 7.1
+        7.1  Dorm room occupants count
+
+        7.3  Private bathroom?
+            ├── No  → continue at 7.4
+            └── Yes
+                •  Upload private-bathroom photos
+                •  Upload private-bathroom videos
+
+        7.4  Private common space / living room?
+            ├── No  → continue at 7.5
+            └── Yes
+                7.4.1  Does your common space have a different room number?
+                    ├── No
+                    └── Yes
+                        •  Upload private-common-space photos
+                        •  Upload private-common-space videos
+
+        7.5  Private kitchen?
+            ├── No  → proceed to step 11 (public facilities)
+            └── Yes
+                •  Upload private-kitchen photos
+                •  Upload private-kitchen videos
+
+11. Public bathroom?
+    ├── No  → step 12
+    └── Yes
+        •  Upload public-bathroom photos
+        •  Upload public-bathroom videos
+
+12. Public common space?
+    ├── No  → step 13
+    └── Yes
+        •  Upload public-common-space photos
+        •  Upload public-common-space videos
+
+13. Public kitchen?
+    ├── No  → step 14
+    └── Yes
+        •  Select public-kitchen count (one / more than one)
+        •  Specify floors for kitchens (repeatable)
+        •  Upload public-kitchen photos
+        •  Upload public-kitchen videos
+
+14. Public game room?
+    ├── No  → step 15
+    └── Yes
+        •  Select public-game-room count (one / more than one)
+        •  If more than one: exact count
+        •  Specify floors for game rooms (repeatable)
+        •  Upload public-game-room photos
+        •  Upload public-game-room videos
+
+15. Other dorm photos to upload?
+    ├── No  → step 16
+    └── Yes
+        •  Upload additional dorm-room photos
+        •  Upload additional dorm-room videos
+        •  (Optional) Plaque photo
+
+16. Amenities (free-text list)
+17. Comments (free text)
+18. Student email (verification)
+19. Submit 

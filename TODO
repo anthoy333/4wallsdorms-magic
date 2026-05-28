@@ -1,0 +1,16 @@
+Prompts todo with my ask, DO NOT BUILD WITHOUT ME TELLING YOU TOO
+
+1. 
+I want to add a rule: If the room shows up in ‘New Room Big’ Rectangles in section ‘New Rooms’, that same room (same number) can not show up ‘Latest Rooms Added’  section. 
+2. 
+The ‘New Room Big’ Rectangles will be for ‘New Rooms’ or ‘Latest Rooms’ that have at lease 1 photo in the submitting by the student, if there is less then 1 photo it goes into  ‘Latest Rooms Added’ 
+
+3. 
+Okay, I am on http://localhost:3000/su-miller-figma-test, I want to make a templete out of this, how do I do this, becasuse I will need to update it a little bit, right now it is for suffolk university, Nathan R Miller Hall (Miller). I want to make it work for every type of dorm 
+
+4. 
+Great job, I want to create a new page everytime you press on the floor buttons, e.g.:
+[
+http://localhost:3000/dorms/su/boston/miller-hall/room?floor=6]
+
+I want a page that has a menu to be able to move to other floors, this menu is going to be on the left pannel, vertical going up, and I want two circles, for each buttom row, I want it to look like an elveatior. I want the right side 

@@ -1,0 +1,4 @@
+Definitions:
+- Apartment: kitchen, bathroom, common space
+- Suite: Bathroom, maybe common space
+- Adjoining rooms: 2 rooms Adjoining with a Bathroom, 
